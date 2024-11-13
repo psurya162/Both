@@ -1,0 +1,121 @@
+import React from 'react';
+import { Container, Row, Col, Button } from 'react-bootstrap'; // React Bootstrap imports
+import { MdOutlineContentCopy } from "react-icons/md";
+import { IoIosInfinite, IoMdArrowRoundBack } from "react-icons/io";
+import { LuPanelBottom } from "react-icons/lu";
+import { FaAward } from "react-icons/fa";
+import { FaArrowRightArrowLeft } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
+import './Upgrade.css'; 
+
+const Upgrade = () => {
+    const navigate = useNavigate();
+
+
+    const handleNavigate = () => {
+        navigate(-1); 
+    };
+
+    return (
+        <>
+            <Container fluid className="upgrade mb-3">
+                <div className="upgrade-back" onClick={handleNavigate} style={{ cursor: 'pointer' }}>
+                    <IoMdArrowRoundBack size={30} />
+                </div>
+                <Row className="text-center">
+                    <Col>
+                        <h4 className='pt-3 pb-3 text-white'>Get Delta Subscription and <br /> Learn Unlimited</h4>
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container className="subscription-container mb-4">
+                <h4>Subscription Plans</h4>
+                <Row>
+                    <Col md={6} className="d-flex justify-content-end mb-3">
+                        <div className="subscription-card p-3">
+                            <p>One Year</p>
+                            <p>₹4000/yr</p>
+                        </div>
+                    </Col>
+                    <Col md={6} className="mb-3">
+                        <div className="subscription-card p-3">
+                            <p>Three Months</p>
+                            <p>₹1200/3mth</p>
+                        </div>
+                    </Col>
+                    <Col md={6} className="d-flex justify-content-end mb-3">
+                        <div className="subscription-card p-3">
+                            <p>One Week</p>
+                            <p>₹100/wk</p>
+                        </div>
+                    </Col>
+                    <Col md={6} className="mb-3">
+                        <div className="subscription-card p-3">
+                            <p>One Day</p>
+                            <p>₹20/day</p>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container className="upgrade-section text-center mt-5 mb-5">
+                <Row>
+                    <Col>
+                        <h4 >Go Pro And Learn Unlimited</h4>
+                    </Col>
+                </Row>
+                <Row className="plan-feature justify-content-center mt-3">
+                    <Col md={2} className="plan-feature-child text-center">
+                        <MdOutlineContentCopy size={30} />
+                        <h6>Annual Plan</h6>
+                        <p>Video lessons, syllabus books, notes</p>
+                    </Col>
+                    <Col md={2} className="plan-feature-child text-center">
+                        <IoIosInfinite size={30} />
+                        <h6>Unlimited Practice</h6>
+                        <p>Build mastery & improve your score</p>
+                    </Col>
+                    <Col md={2} className="plan-feature-child text-center">
+                        <LuPanelBottom size={30} />
+                        <h6>Explore Additional Content</h6>
+                        <p>DIY projects, stories, poems, biographies</p>
+                    </Col>
+                    <Col md={2} className="plan-feature-child text-center">
+                        <FaAward size={30} />
+                        <h6>Test Prep</h6>
+                        <p>Access to all competitive exams</p>
+                    </Col>
+                    <Col md={2} className="plan-feature-child text-center">
+                        <FaArrowRightArrowLeft size={30} />
+                        <h6>Switch Classes</h6>
+                        <p>Change class anytime within the year</p>
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container className="billing-details-section border p-3">
+                <Row>
+                    <Col className="text-center">
+                        <h5>Billing Details</h5>
+                    </Col>
+                </Row>
+                <Row className="text-center">
+                    <Col>
+                        <div className="billing-details-child">
+                            <p>Plan Total</p>
+                            <p>4000</p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Button variant="primary" className="default__button w-100">Proceed</Button>
+                    </Col>
+                </Row>
+            </Container>
+        </>
+    );
+}
+
+export default Upgrade;

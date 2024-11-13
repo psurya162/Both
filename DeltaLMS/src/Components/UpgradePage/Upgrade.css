@@ -1,0 +1,119 @@
+
+.upgrade{
+    background-color: var(--primaryColor);
+    color: white;
+    border-bottom-right-radius: 25px;
+}
+.upgrade .upgrade__header p{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+    
+}
+.upgrade h4{
+    font-weight: 400;
+}
+.upgrade .upgrade-back{
+    position: absolute;
+    top: 23px;
+    left: 33px;
+  
+}
+.upgrade .upgrade__header{
+    position: relative;
+}
+.upgrade-section h4{
+    font-weight: 500;
+}
+
+.subscription-container {
+    margin-top: 50px;
+    text-align: center;
+}
+.subscription-container h4{
+    font-weight: 500;
+}
+.subscription-container p{
+    font-size: 15px;
+    color: black;
+}
+.subscription-card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    /* padding: 20px; */
+    transition: all 0.3s ease;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    
+    
+}
+.subscription-card p{
+    margin-bottom: 0px;
+    font-size: 15px;
+    
+}
+.subscription-card:hover {
+    border-color: black;
+    cursor: pointer;
+}
+.radio-input {
+    margin-right: 10px;
+}
+.radio-label {
+    font-weight: 600;
+}
+.plan-feature .plan-feature-child{
+    border: 1px solid grey;
+    margin-left: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 13px;
+    
+
+}
+.plan-feature .plan-feature-child p{
+    color: black;
+}
+
+.plan-feature-child .plan-logo{
+    font-size: 25px;
+   color: var(--primaryColor);
+
+}
+.plan-feature h6{
+    font-weight: 400;
+}
+.billing-details-section {
+    width: 400px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.billing-details-section .billing-details-child{
+    display: flex;
+    gap: 250px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .billing-details-section{
+        width: 289px;
+    }
+    .billing-details-section .billing-details-child {
+        display: flex;
+        gap: 112px;
+    }
+    .upgrade .upgrade__header p{
+        font-size: 13px;
+    }
+    .plan-feature .plan-feature-child{
+        margin-bottom: 30px;
+    }
+}

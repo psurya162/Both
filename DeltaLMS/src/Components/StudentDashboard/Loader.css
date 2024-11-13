@@ -1,0 +1,21 @@
+/* Add this to your CSS file */
+.loader-wrapperrrrrr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .loader-wrapperrrrrr .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .quote {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
